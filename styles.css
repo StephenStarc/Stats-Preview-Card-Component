@@ -1,0 +1,124 @@
+:root{
+    --pri-dark-blue :hsl(233, 47%, 7%);
+    --pri-sat-blue:hsl(244, 38%, 16%);
+    --pri-soft-blue:hsl(277, 64%, 61%);
+
+    --neu-white:hsl(0, 0%, 100%);
+    --neu-white-mp:hsla(0, 0%, 100%, 0.75);
+    --neu-white-sp:hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+}
+
+body{
+    margin-top: 3.5em;
+    min-height: 100vh;
+    background-color: var(--pri-dark-blue);
+    color: var(--neu-white);
+    display: grid;
+    place-content: center;
+    font-family: 'Inter', sans-serif;
+}
+main{
+    background-color: var(--pri-sat-blue);
+    max-width: 300px;
+    text-align: center;
+    margin: 1.5rem;
+    height: max-content;
+    border-radius: 7px;
+    overflow: hidden;
+    display: grid;
+}
+.main__picture-header,
+.main__header-image{
+    width: 100%;
+    height: 100%;
+}
+.main__picture-header{
+    background: var(--pri-soft-blue);
+}
+.main__content{
+    margin: 1rem;
+    padding: 1em;
+}
+.main__header-image{
+    mix-blend-mode: multiply;
+    opacity: .75;
+    object-fit: cover;
+}
+.main__content{
+    width: 100%;
+    align-items: center;
+}
+.main__header{
+    font-size: 1.4rem;
+    width: 90%;
+}
+.main__heading--highlighted{
+    color: var(--pri-soft-blue);
+}
+.main__description{
+    margin-top: 1em;
+    line-height: 1.5em;
+    font-size: 0.9em;
+    color: var(--neu-white-sp);
+    width: 90%;
+}
+.main__status-container{
+    list-style: none;
+    margin: 1em;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+.main__status{
+    margin: 0.6em 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.main__status{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.main__status--subscripted{
+    font-size: 0.7rem;
+    margin-top: 0.4em;
+    text-transform: uppercase;
+    color: var(--neu-white-sp);
+    font-weight: 400;
+}
+@media (min-width: 600px){
+    main{
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+    }
+    .main__picture-header{
+        order:1
+    }
+    .main__content{
+        order:-1;
+    }
+    .main__status-container{
+        margin: 1rem 0;
+        flex-direction: row;
+        gap: 3em;
+    }
+.main__header{
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+    .main__description{
+        text-align: left;
+        font-size: 0.8rem;
+    }
+
+}

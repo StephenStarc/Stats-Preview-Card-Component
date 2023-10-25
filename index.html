@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <!-- Meta Tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Stats Preview Card Component Solution" />
+  <meta name="keywords" content="Frontend Mentor, Stats Preview Card Component Challenge" />
+  <meta property="og:title" content="Stats Preview Card Component - Frontend Mentor" />
+  <meta property="og:description" content="Stats Preview Card Component Solution" />
+  <meta name="theme-color" content="#1B1938" />
+  <meta name="msapplication-navbutton-color" content="#1B1938" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#1B1938" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Stats preview card component</title>
+
+   <!-- Font Links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <picture class="main__picture-header">
+      <source srcset="./images/image-header-desktop.jpg" media="(min-width:600px)">
+      <img class = "main__header-image"src="./images/image-header-mobile.jpg" alt="card-image">
+    </picture>
+
+    <section class="main__content">
+
+      <h1 class="main__header">Get <span class="main__heading--highlighted">insights</span> that help your business grow.</h1>
+
+      <p class="main__description">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+
+      <ul role = "list"  class="main__status-container">
+        <li role = "list-item">
+          <p class="main__status">10k+
+            <span class="main__status--subscripted">companies</span>
+          </p>
+        </li>
+
+        <li role = "list-item">
+          <p class="main__status">314 
+            <span class="main__status--subscripted" >templates</span>
+          </p>
+        </li>
+
+        <li role = "list-item">
+          <p class="main__status">12M+ 
+            <span class="main__status--subscripted"> queries</span>
+          </p>
+        </li>
+      </ul>  
+    </section>
+  </main>
+</body>
+</html>
+
+
